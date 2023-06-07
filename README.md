@@ -30,3 +30,7 @@ For the given input text "Ali?", the model predicts the output text "Reza".
 Please note that this is a simplified example, and further improvements can be made to enhance the model's performance.
 
 Feel free to explore the code and adapt it to your own text translation tasks!
+
+## License
+
+This project is licensed under a Free License.
