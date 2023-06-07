@@ -4,6 +4,7 @@ Text Translation with LSTM
 This repository contains code for training a text translation model using LSTM (Long Short-Term Memory) networks. The model is trained to translate input texts from one language to corresponding output texts in another language.
 
 Dataset
+
 The dataset used for training consists of input texts and their corresponding output texts. Here are a few examples from the dataset:
 
 Input Text: "How are you?" | Output Text: "I'm fine, thank you."
