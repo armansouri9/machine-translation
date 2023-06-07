@@ -11,7 +11,7 @@ Input Text: "What's your name?" | Output Text: "My name is John."
 Input Text: "What do you do?" | Output Text: "I'm an engineer."
 Input Text: "Ali?" | Output Text: "Reza"
 
-Model Architecture
+Model Architecture\n
 The text translation model is implemented using PyTorch. It consists of an embedding layer, an LSTM encoder, an LSTM decoder, and a fully connected layer. The model takes an input sequence, encodes it using the encoder LSTM, decodes it using the decoder LSTM, and generates the output sequence. The output sequence is passed through a softmax function to obtain the predicted output probabilities.
 
 Training
