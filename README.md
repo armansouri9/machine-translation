@@ -1,6 +1,6 @@
 # machine-translation
-Machine Translation
 Text Translation with LSTM
+
 This repository contains code for training a text translation model using LSTM (Long Short-Term Memory) networks. The model is trained to translate input texts from one language to corresponding output texts in another language.
 
 Dataset
