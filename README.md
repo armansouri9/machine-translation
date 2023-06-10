@@ -1,36 +1,36 @@
-# Text Translation with LSTM
+# Machine Translation (EN-FA)
 
-This repository contains code for training a text translation model using LSTM (Long Short-Term Memory) networks. The model is trained to translate input texts from one language to corresponding output texts in another language.
+This repository contains code for machine translation from English to Farsi (Persian). The code is implemented in a Jupyter Notebook file named "Machine Translation(EN-FA).ipynb". The notebook provides an example of training a translation model using a sequence-to-sequence architecture with an LSTM encoder and decoder.
+
+## Repository Structure
+
+- `Machine Translation(EN-FA).ipynb`: Jupyter Notebook file containing the code for training and testing the translation model.
+- `LICENSE`: License file for the project.
 
 ## Dataset
 
-The dataset used for training consists of input texts and their corresponding output texts. Here are a few examples from the dataset:
+The dataset used for training the translation model consists of English input texts and corresponding Farsi output texts. The input and output texts are provided in the code as lists named `input_texts` and `output_texts`, respectively.
 
-- Input Text: "How are you?" | Output Text: "I'm fine, thank you."
-- Input Text: "What's your name?" | Output Text: "My name is John."
-- Input Text: "What do you do?" | Output Text: "I'm an engineer."
-- Input Text: "Ali?" | Output Text: "Reza"
+## Dependencies
 
-## Model Architecture
+The following Python packages are required to run the code:
 
-The text translation model is implemented using PyTorch. It consists of an embedding layer, an LSTM encoder, an LSTM decoder, and a fully connected layer. The model takes an input sequence, encodes it using the encoder LSTM, decodes it using the decoder LSTM, and generates the output sequence. The output sequence is passed through a softmax function to obtain the predicted output probabilities.
+- transformers
+- torch
 
-## Training
+Install the required packages using the following command:
 
-The model is trained using the provided dataset. The training process involves iterating over the dataset for a specified number of epochs. For each input-output pair in the dataset, the model calculates the loss between the predicted output and the actual output using the negative log-likelihood loss (NLLLoss). The optimizer (Adam) is then used to update the model's parameters based on the calculated loss.
+```
+pip install transformers torch
+```
 
-During training, the loss is printed for every 10th epoch to monitor the model's progress.
+## Training the Model
 
-## Inference
+To train the translation model, run the cells in the Jupyter Notebook file "Machine Translation(EN-FA).ipynb". The notebook includes code for defining the model architecture, creating the translation dataset, training the model using the dataset, and evaluating the model's performance.
 
-After training, the model can be used for text translation. A sample input text, "Ali?", is provided, and the model predicts the corresponding output text. The model's prediction is obtained by passing the input sequence through the trained model, selecting the top-k predictions, and converting them back into text format.
+## Testing the Model
 
-For the given input text "Ali?", the model predicts the output text "Reza".
-
-Please note that this is a simplified example, and further improvements can be made to enhance the model's performance.
-
-Feel free to explore the code and adapt it to your own text translation tasks!
-
+After training the model, you can test its performance on new input texts. The notebook includes an example of testing the model on the input text "چکار می‌کنی؟" (What do you do?). The predicted output text will be displayed.
 ## License
 
 This project is licensed under a Free License.
